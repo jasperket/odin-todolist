@@ -1,0 +1,28 @@
+{
+  "name": "odin-todolist",
+  "version": "1.0.0",
+  "description": "a todolist",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jasperket/odin-todolist.git"
+  },
+  "author": "jasperket <jasperkeith1.vallecera@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasperket/odin-todolist/issues"
+  },
+  "homepage": "https://github.com/jasperket/odin-todolist#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
