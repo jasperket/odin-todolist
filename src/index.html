@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>To-do List</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <nav>
+            <h2 class="project-heading">Projects</h2>
+            <ul>
+                <li class="project selected">Default</li>
+                <li class="project">Family
+                    <button class="project-delete">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </button>
+                </li>
+            </ul>
+            <button class="add-project">+ Add Project</button>
+        </nav>
+        <div class="to-dos">
+            <h1>To do</h1>
+            <ul class="todo-list">
+                <h3 class="todo-date">Today</h3>
+                <li class="todo-card red">
+                    <input type="checkbox" data-index="0" class="todo-complete">
+                    <div class="todo-text">
+                        <p>Drink Water</p>
+                        <p>5:30 PM</p>
+                    </div>
+                    <button class="todo-delete">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </button>
+                </li>
+                <li class="todo-card yellow">
+                    <input type="checkbox" name="todoToday0" id="todoToday0" data-index="0" class="todo-complete">
+                    <div class="todo-text">
+                        <p>Drink Water</p>
+                        <p>5:30 PM</p>
+                    </div>
+                    <button class="todo-delete">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </button>
+                </li>
+                <li class="todo-card green">
+                    <input type="checkbox" name="todoToday0" id="todoToday0" data-index="0" class="todo-complete">
+                    <div class="todo-text">
+                        <p>Drink Water</p>
+                        <p>5:30 PM</p>
+                    </div>
+                    <button class="todo-delete">
+                        <span class="material-symbols-outlined">
+                            delete
+                        </span>
+                    </button>
+                </li>
+            </ul>
+            <button class="add-todo">+ Add To Do</button>
+        </div>
+    </div>
 </body>
+
 </html>

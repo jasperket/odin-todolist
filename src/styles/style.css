@@ -1,0 +1,143 @@
+:root {
+    --bg-color: #fff;
+    --bg-2: #fafafa;
+    --bg-3: #F8F9FA;
+    --text-colored: #eb5e28;
+    --hover-gray: #DEE2E6;
+    --red: #ffccd5;
+    --red-hover:#ffb3c1;
+    --yellow: #fff6cc;
+    --yellow-hover: #fff2b2;
+    --green: #d8f3dc;
+    --green-hover: #b7e4c7;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+html {
+    font-size: 87.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+}
+
+.container {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--bg-2);
+    min-height: 100vh;
+    min-width: 20rem;
+    padding: 2rem;
+}
+
+.project-heading {
+    margin-bottom: 1rem;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+.add-project,
+.project,
+.add-todo {
+    width: 100%;
+    text-align: left;
+    background: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
+    padding: 0.25rem 1rem;
+}
+
+.add-todo {
+    width: fit-content;
+}
+
+.add-project:hover,
+.project:hover,
+.add-todo:hover,
+.todo-card:hover {
+    background-color: var(--hover-gray);
+}
+
+.project-delete {
+    background: 0;
+    float: right;
+}
+
+.project-delete .material-symbols-outlined {
+    font-size: 1rem;
+}
+
+.project.selected {
+    background-color: var(--hover-gray);
+}
+
+.to-dos {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo-card {
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.todo-card.red {
+    background-color: var(--red);
+}
+
+.todo-card.red:hover {
+    background-color: var(--red-hover);
+}
+
+.todo-card.yellow {
+    background-color: var(--yellow);
+}
+
+.todo-card.yellow:hover {
+    background-color: var(--yellow-hover);
+}
+
+.todo-card.green {
+    background-color: var(--green);
+}
+
+.todo-card.green:hover {
+    background-color: var(--green-hover);
+}
+
+.todo-delete {
+    margin-left: auto;
+    background: 0;
+}

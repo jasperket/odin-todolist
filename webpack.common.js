@@ -7,7 +7,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Odin | To-do List',
             template: './src/index.html',
         }),
     ],
