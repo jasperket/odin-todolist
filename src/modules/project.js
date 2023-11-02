@@ -1,6 +1,11 @@
 class Project {
-    constructor(name,toDos) {
+    toDos = [];
+    constructor(name) {
         this.name = name;
-        this.toDos = toDos;
-    } 
+    }
+    addToDo(todo) {
+        this.toDos.push(todo);
+    }
 }
+
+export default Project;

@@ -14,7 +14,7 @@
     <div class="container">
         <nav>
             <h2 class="project-heading">Projects</h2>
-            <ul>
+            <ul class="projectList">
                 <li class="project selected">Default</li>
                 <li class="project">Family
                     <button class="project-delete">
@@ -25,6 +25,15 @@
                 </li>
             </ul>
             <button class="add-project">+ Add Project</button>
+            <dialog class="addProjectDialog">
+                <form action="" class="addProjForm">
+                    <input type="text" name="projName" id="projName">
+                    <div class="addProjBtns">
+                        <button type="submit">Add</button>
+                        <button formmethod="dialog">Close</button>
+                    </div>
+                </form>
+            </dialog>
         </nav>
         <div class="to-dos">
             <h1>To do</h1>

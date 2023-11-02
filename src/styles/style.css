@@ -141,3 +141,36 @@ button {
     margin-left: auto;
     background: 0;
 }
+
+.addProjectDialog::backdrop {
+    background:none;
+}
+
+.addProjectDialog {
+    border: 0;
+    background: none;
+    width: 14rem;
+    margin-left: 1rem;
+}
+
+.addProjectDialog input {
+    margin-bottom: 1rem;
+    outline: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.addProjBtns {
+    display: flex;
+    gap: 2rem;
+}
+
+.addProjBtns button {
+    background: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+
+.addProjBtns button:hover {
+    background: var(--hover-gray);
+}
